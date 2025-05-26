@@ -4,8 +4,8 @@ interface Info {
   email: string;
 }
 
-interface AdminInfo extends Info {
+type AdminInfoList = Info & {
   isAdmin: boolean;
-}
+};
 
-export type { Info, AdminInfo };
+export type { Info, AdminInfoList  };

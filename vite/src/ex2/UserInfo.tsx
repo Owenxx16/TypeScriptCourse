@@ -1,11 +1,15 @@
 import React from "react";
 import type { Info } from "./types";
-const UserInfo = ({ id, name, email }: Info) => {
+
+type UserInfoProps = {
+  user: Info;
+};
+const UserInfo: React.FC<UserInfoProps> = ({ user }) => {
   return (
     <div>
-      <p>{id}</p>
-      <p>{name}</p>
-      <p>{email}</p>
+      <p>{user.id}</p>
+      <p>{user.name}</p>
+      <p>{user.email}</p>
     </div>
   );
 };
