@@ -4,6 +4,8 @@ import UserInfo from "./ex2/UserInfo";
 import AdminInfo from "./ex2/AdminInfo";
 import UserProfile from "./ex3/UserProfile";
 import Todos from "./ex3/Todos";
+import FocusInput from "./ex4/FocusInput";
+import ContactForm from "./ex4/ContactForm";
 
 function App() {
   // function handleClick() {
@@ -36,7 +38,9 @@ function App() {
       <AdminInfo admin={admin} /> */}
       {/* <Counter /> */}
       {/* <UserProfile /> */}
-      <Todos />
+      {/* <Todos /> */}
+      {/* <FocusInput /> */}
+      <ContactForm />
     </>
   );
 }
